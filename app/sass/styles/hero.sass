@@ -1,0 +1,65 @@
+.hero
+	background-color: $light
+	&-slide
+		position: relative
+
+	&-composition
+		padding-top: 5%
+		padding-bottom: 5%
+
+		&__img
+			padding-top: 30px
+
+	&-composition__left,
+	&-composition__right
+		float: left
+		
+	&-composition__left
+		width: 50%
+
+	&-composition__right
+		float: right
+		margin-left: 30px
+		width: calc(50% - 30px)
+
+	&-btns
+		margin-bottom: 15px
+
+	&-dots
+		text-align: center
+		position: relative
+		bottom: 10px
+		li
+			display: inline-block
+			&.slick-active
+				.hero-dot__btn
+					background-color: $dark
+
+	&-dot__btn
+		display: block
+		width: 14px
+		height: 14px
+		border: 1px solid $dark
+		background-color: transparent
+		border-radius: 50%
+		margin-right: 10px
+		outline: 0
+		cursor: pointer
+		&:hover
+			background-color: $dark
+
+.title
+	&__line
+		display: block
+
+.hero-list
+	margin-bottom: 40px
+	position: relative
+
+.hero-list__item
+	&:not(:last-child)
+		margin-bottom: 5px
+	.svg-inline--fa
+		margin-right: 30px
+		color: $accent
+		font-size: 16px

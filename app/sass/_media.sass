@@ -1,0 +1,273 @@
+@import "vars"
+
+@media (max-width: 1200px)
+	.nav-btn
+		display: none
+
+	.nav-list
+		width: 80%
+
+	.title
+		font-size: 55px
+
+	.hero
+		&-composition__img
+			padding-top: 60px
+
+	.abouts-item
+		padding-left: 28px
+		padding-right: 28px
+
+	.blog
+		text-align: center
+
+
+@media (max-width: 991px)
+	.hidden-md
+		display: none !important
+
+	.contacts
+		display: none
+
+	.log-in, .socials
+		width: 50%
+
+	.toggle-menu
+		display: block
+
+	.nav-list
+		position: absolute
+		width: 80%
+		top: 100%
+		left: 50%
+		transform: translateX(-50%)
+		background-color: $accent
+		&__item
+			display: block
+			text-align: left
+
+			&:hover
+				.nav-list__link
+					color: #fff
+					.svg-inline--fa
+						transform: rotate(90deg)
+
+		&__link
+			color: #fff
+			line-height: 3
+			.svg-inline--fa
+				margin-left: 5px
+
+	.dropdown
+		position: relative
+		left: 20px
+		transform: translateX(0)
+		box-shadow: none
+		&__item
+			background-color: transparent
+
+		&__link
+			color: #fff
+
+	.hero
+		&-composition__left
+			width: 100%
+			
+		&-composition__right
+			display: none
+
+	.abouts-item, .services-list__item,
+	.case-list__item, .price,
+	.blog
+		width: calc(50% - 30px)
+
+	.email-form__item
+		width: 75%
+
+	.footer-col
+		width: calc(50% - 30px)
+
+	.admin
+		margin-bottom: 10px
+
+	.blog
+		text-align: left
+		&__body
+		    padding: 25px 15px 30px
+
+
+@media (max-width: 768px)
+	.visible-sm
+		display: block !important
+
+	.abouts-item, .services-list__item,
+	.case-list__item, .price,
+	.blog
+		width: 100%
+		max-width: 363px
+		float: none
+		margin-left: auto
+		margin-right: auto
+
+	.abouts, .services-list,
+	.case-list, .prices,
+	.blogs
+		margin-left: 0
+		margin-right: 0
+
+	.title
+		margin-bottom: 30px
+
+	.hero
+		text-align: center
+
+		&-list
+			margin-bottom: 20px
+
+		&-list__item
+			text-align: left
+			padding-left: 15%
+
+	.archive-list__item
+		width: calc(50% - 30px)
+
+	.about-info__left
+		display: none
+
+	.about-info__right
+		width: 100%
+
+	.email-form__item
+		width: 100%
+		padding-left: 25px
+		padding-right: 25px	
+
+	.email-form__btn
+		position: absolute
+		top: 0
+		right: 0
+		left: initial
+
+	.email__heading
+		font-size: 30px
+		margin-bottom: 25px
+
+	.footer-col
+		width: 100%
+		float: none
+		margin-left: 0
+		margin-right: 0
+		&:last-child
+			margin-bottom: 0
+
+	.footer__title
+		margin-bottom: 15px
+
+	.footer__wrapper
+		padding-top: 50px
+		padding-bottom: 50px
+		text-align: center
+
+	.footer__logo
+		margin-bottom: 0
+	
+
+@media (max-width: 576px)
+	.section
+		padding-top: 50px
+		padding-bottom: 50px
+		&-header
+			margin-bottom: 40px
+
+	.log-in, .socials
+		width: 100%
+		text-align: center	
+
+	.title
+		font-size: 45px
+
+	.about-info__text
+		margin-bottom: 30px
+
+	.about-btns
+		text-align: center
+		margin-bottom: -20px
+
+		&__left
+			margin-right: 0
+
+		&__btn
+			margin-bottom: 10px
+
+	.abouts, .services-list,
+	.case-list
+		margin-bottom: 30px
+
+	.news
+		&:not(:last-child)
+			margin-bottom: 15px
+
+@media (max-width: 480px)
+	.email-form__item
+		margin-bottom: 10px	
+
+	.email-form__btn
+		position: relative
+		width: 40%
+		left: 0
+		height: 45px
+		line-height: 45px
+		padding-left: 15px
+		padding-right: 15px
+
+
+@media (max-width: 375px)
+	.testi
+		&__left
+			width: 100%
+			min-height: 170px
+
+		&__right
+			width: 100%
+
+		&__text
+			margin-bottom: 0
+
+		&__name
+			font-size: 20px
+
+		&__job-position
+			font-size: 12px
+
+	.about-info__title
+		font-size: 25px
+
+	.blog
+		text-align: center
+
+	.admin__link
+		font-size: 11px
+
+	.copyright
+		padding-top: 15px
+		padding-bottom: 15px
+
+// Container width points
+@media (min-width: 576px)
+	.container
+		max-width: 540px
+
+@media (min-width: 768px)
+	.container
+		max-width: 720px
+
+@media (min-width: 992px)
+	.container
+		max-width: 960px
+
+	.nav-list
+		display: block !important
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1170px
