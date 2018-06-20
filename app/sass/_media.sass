@@ -95,6 +95,25 @@
 		&__body
 		    padding: 25px 15px 30px
 
+	.service-item
+		&:not(:last-child)
+			margin-bottom: 30px
+
+	.service-item__right
+		display: none
+
+	.service-item__left,
+	.serv-item__left
+		margin-right: 0
+		width: 100%
+
+	.serv-item__left
+		margin-bottom: 30px
+
+	.serv-item__right
+		width: 100%
+		margin-left: 0
+
 
 @media (max-width: 768px)
 	.visible-sm
@@ -207,6 +226,12 @@
 		&:not(:last-child)
 			margin-bottom: 15px
 
+	.inner-hero
+		min-height: 150px
+
+	.inner-title
+		font-size: 38px
+
 @media (max-width: 480px)
 	.email-form__item
 		margin-bottom: 10px	
@@ -251,6 +276,15 @@
 	.copyright
 		padding-top: 15px
 		padding-bottom: 15px
+
+	.inner-hero
+		min-height: 120px
+
+	.inner-title
+		font-size: 28px
+
+	.service-item
+		text-align: center
 
 // Container width points
 @media (min-width: 576px)
