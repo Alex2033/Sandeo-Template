@@ -19,3 +19,93 @@
 .blog_inner
 	width: calc(50% - 30px)
 	margin-bottom: 35px
+
+.blog-sidebar__title
+	font-size: 26px
+	color: #353537
+	font-weight: 700
+	letter-spacing: 1px
+	margin-bottom: 25px
+
+.categories
+	margin-bottom: 90px
+	&-list
+		background-color: #fff
+		padding: 36px 31px
+		border-bottom: 6px solid $accent
+
+		&__item
+			&:not(:last-child)
+				margin-bottom: 20px
+
+		&__link
+			font-size: 17px
+			color: $main-color
+			font-weight: 400
+			letter-spacing: .5px
+			transition: color .25s ease
+			&:hover
+				.categories-list__tag
+					color: $accent
+
+		&__tag
+			float: left
+
+		&__number
+			float: right
+			color: #000
+
+.blog-news-list
+	margin-bottom: 90px
+	&__item
+		background-color: #fff
+		border-bottom: 3px solid $accent
+		&:not(:last-child)
+			margin-bottom: 15px
+
+	&__link
+		display: block
+
+	&__img
+		float: left
+		display: block
+		width: 114px
+		height: 102px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		margin-right: 18px
+
+	&__info
+		display: block
+		float: left
+		padding-top: 20px
+
+	&__title
+		color: #353537
+		font-weight: 400
+		font-size: 20px
+
+	&__time
+		font-size: 15px
+		color: $accent
+		font-weight: 500
+
+.keywords
+	&-list
+		background-color: #fff
+		padding: 28px
+
+		&__item
+			display: inline-block
+			margin-right: 5px
+			margin-bottom: 5px
+
+		&__link
+			font-size: 20px
+			font-weight: 400
+			color: #353537
+			letter-spacing: 0.88px
+			transition: color .25s ease
+			&:hover
+				color: $accent

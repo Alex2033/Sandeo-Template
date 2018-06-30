@@ -112,21 +112,10 @@
             <ul class="nav-list">
               <li class="nav-list__item">
                 <a href="index.html" class="nav-list__link">Home
-                  <i class="fas fa-angle-right"></i>
                 </a>
-                <ul class="dropdown">
-                  <li class="dropdown__item"><a href="index.html" class="dropdown__link">Home 1</a></li>
-                  <li class="dropdown__item"><a href="index.html" class="dropdown__link">Home 2</a></li>
-                </ul>
               </li>
               <li class="nav-list__item">
-                <a href="about.html" class="nav-list__link">About
-                  <i class="fas fa-angle-right"></i>
-                </a>
-                <ul class="dropdown">
-                  <li class="dropdown__item"><a href="about.html" class="dropdown__link">About 1</a></li>
-                  <li class="dropdown__item"><a href="about.html" class="dropdown__link">About 2</a></li>
-                </ul>
+                <a href="about.html" class="nav-list__link">About</a>
               </li>
               <li class="nav-list__item">
                 <a href="services.html" class="nav-list__link">Service
@@ -152,10 +141,9 @@
                   <i class="fas fa-angle-right"></i>
                 </a>
                 <ul class="dropdown">
-                  <li class="dropdown__item"><a href="single-blog.html" class="dropdown__link">Blog 1</a></li>
-                  <li class="dropdown__item"><a href="single-blog.html" class="dropdown__link">Blog 2</a></li>
-                  <li class="dropdown__item"><a href="single-blog.html" class="dropdown__link">Blog 3</a></li>
-                  <li class="dropdown__item"><a href="single-blog.html" class="dropdown__link">Blog 4</a></li>
+                  <li class="dropdown__item"><a href="blog.html" class="dropdown__link">Blog</a></li>
+                  <li class="dropdown__item"><a href="single-blog.html" class="dropdown__link">Blog single</a></li>
+                  <li class="dropdown__item"><a href="blog-sidebar.html" class="dropdown__link">Blog with sidebar</a></li>
                 </ul>
               </li>
               <li class="nav-list__item">
@@ -163,8 +151,8 @@
                   <i class="fas fa-angle-right"></i>
                 </a>
                 <ul class="dropdown">
-                  <li class="dropdown__item"><a href="single-page.html" class="dropdown__link">Page 1</a></li>
-                  <li class="dropdown__item"><a href="single-page.html" class="dropdown__link">Page 2</a></li>
+                  <li class="dropdown__item"><a href="login.html" class="dropdown__link">Login</a></li>
+                  <li class="dropdown__item"><a href="register.html" class="dropdown__link">Register</a></li>
                 </ul>
               </li>
               <li class="nav-list__item">
@@ -418,7 +406,7 @@
             <!-- end blogs -->
 
             <!-- begin pagination -->
-            <ul class="pagination">
+            <ul class="pagination blog-inner-pagination">
               <li class="pagination__item">
                 <button class="pagination__btn pagination__link">
                   <i class="fas fa-angle-left"></i>
@@ -464,9 +452,139 @@
             
             <!-- begin search-box -->
             <form class="search-box">
-              
+              <input type="text" placeholder="Search..." class="search-box__item search-box__input">
+              <button type="button" class="search-box__item search-box__btn">
+              	<i class="fas fa-search"></i>
+              </button>
             </form>
             <!-- end search-box -->
+			
+      			<!-- begin categories -->
+      			<div class="categories">
+
+      				<h3 class="blog-sidebar__title">
+      					Categories...
+      				</h3>
+      				
+      				<!-- begin categories-list -->
+      				<ul class="categories-list">
+      					<li class="categories-list__item">
+      						<a href="javascript:void(0);" class="categories-list__link clearfix">
+      							<span class="categories-list__tag">Web Development</span>
+      							<span class="categories-list__number">(07)</span>
+      						</a>
+      					</li>
+      					<li class="categories-list__item">
+      						<a href="javascript:void(0);" class="categories-list__link clearfix">
+      							<span class="categories-list__tag">Graphic Design</span>
+      							<span class="categories-list__number">(21)</span>
+      						</a>
+      					</li>
+      					<li class="categories-list__item">
+      						<a href="javascript:void(0);" class="categories-list__link clearfix">
+      							<span class="categories-list__tag">Seo Marketing</span>
+      							<span class="categories-list__number">(09)</span>
+      						</a>
+      					</li>
+      					<li class="categories-list__item">
+      						<a href="javascript:void(0);" class="categories-list__link clearfix">
+      							<span class="categories-list__tag">Android Development</span>
+      							<span class="categories-list__number">(13)</span>
+      						</a>
+      					</li>
+      					<li class="categories-list__item">
+      						<a href="javascript:void(0);" class="categories-list__link clearfix">
+      							<span class="categories-list__tag">Others</span>
+      							<span class="categories-list__number">(33)</span>
+      						</a>
+      					</li>
+      				</ul>
+      				<!-- end categories-list -->
+
+      			</div>
+      			<!-- end categories -->
+
+      			<!-- begin blog-news -->
+      			<div class="blog-news">
+      				
+      				<h3 class="blog-sidebar__title">Recent News...</h3>
+
+      				<!-- begin blog-news-list -->
+      				<ul class="blog-news-list">
+      					<li class="blog-news-list__item">
+      						<a href="javascript:void(0);" class="blog-news-list__link clearfix">
+      							<span class="blog-news-list__img" style="background-image: url(img/blog-inner/news-img.jpg);"></span><span class="blog-news-list__info">
+      								<h5 class="blog-news-list__title">Your Blog Title Here</h5>
+      								<time datetime="2018-20-03" class="blog-news-list__time">20 Mar, 2018</time>
+      							</span>
+      						</a>
+      					</li>
+      					<li class="blog-news-list__item">
+      						<a href="javascript:void(0);" class="blog-news-list__link clearfix">
+      							<span class="blog-news-list__img" style="background-image: url(img/blog-inner/news-img.jpg);"></span><span class="blog-news-list__info">
+      								<h5 class="blog-news-list__title">Your Blog Title Here</h5>
+      								<time datetime="2018-20-03" class="blog-news-list__time">20 Mar, 2018</time>
+      							</span>
+      						</a>
+      					</li>
+      					<li class="blog-news-list__item">
+      						<a href="javascript:void(0);" class="blog-news-list__link clearfix">
+      							<span class="blog-news-list__img" style="background-image: url(img/blog-inner/news-img.jpg);"></span><span class="blog-news-list__info">
+      								<h5 class="blog-news-list__title">Your Blog Title Here</h5>
+      								<time datetime="2018-20-03" class="blog-news-list__time">20 Mar, 2018</time>
+      							</span>
+      						</a>
+      					</li>
+      					<li class="blog-news-list__item">
+      						<a href="javascript:void(0);" class="blog-news-list__link clearfix">
+      							<span class="blog-news-list__img" style="background-image: url(img/blog-inner/news-img.jpg);"></span><span class="blog-news-list__info">
+      								<h5 class="blog-news-list__title">Your Blog Title Here</h5>
+      								<time datetime="2018-20-03" class="blog-news-list__time">20 Mar, 2018</time>
+      							</span>
+      						</a>
+      					</li>
+      				</ul>
+      				<!-- end blog-news-list -->
+
+      			</div>
+      			<!-- end blog-news -->
+
+      			<!-- begin keywords -->
+      			<div class="keywords">
+
+      				<h3 class="blog-sidebar__title">Keyword...</h3>
+
+      				<!-- begin keywords-list -->
+      				<ul class="keywords-list">
+      					<li class="keywords-list__item">
+      						<a href="javascript:void(0);" class="keywords-list__link">Web Development,</a>
+      					</li>
+      					<li class="keywords-list__item">
+      						<a href="javascript:void(0);" class="keywords-list__link">Website,</a>
+      					</li>
+      					<li class="keywords-list__item">
+      						<a href="javascript:void(0);" class="keywords-list__link">Web design,</a>
+      					</li>
+      					<li class="keywords-list__item">
+      						<a href="javascript:void(0);" class="keywords-list__link">Seo marketing,</a>
+      					</li>
+      					<li class="keywords-list__item">
+      						<a href="javascript:void(0);" class="keywords-list__link">Keyword,</a>
+      					</li>
+      					<li class="keywords-list__item">
+      						<a href="javascript:void(0);" class="keywords-list__link">Bbook,</a>
+      					</li>
+      					<li class="keywords-list__item">
+      						<a href="javascript:void(0);" class="keywords-list__link">Education,</a>
+      					</li>
+      					<li class="keywords-list__item">
+      						<a href="javascript:void(0);" class="keywords-list__link">Writer</a>
+      					</li>
+      				</ul>
+      				<!-- end keywords-list -->
+      				
+      			</div>
+      			<!-- end keywords -->
 
           </aside>
           <!-- end blog-sidebar -->
