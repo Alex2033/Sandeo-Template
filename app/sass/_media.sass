@@ -21,6 +21,9 @@
 	.blog
 		text-align: center
 
+	.case-info-list__item
+		margin-right: 25px
+
 
 @media (max-width: 991px)
 	.hidden-md
@@ -114,8 +117,24 @@
 		width: 100%
 		margin-left: 0
 
+	.case-info
+		padding-left: 0
+		padding-right: 0
+
+	.case-info-list__item
+		margin-right: 0
+		width: calc(50% - 4px)
+
+	// PAGINATION
+	.pagination
+		text-align: center
+
+
 
 @media (max-width: 768px)
+	.hidden-sm
+		display: none !important
+
 	.visible-sm
 		display: block !important
 
@@ -189,9 +208,18 @@
 
 	.footer__logo
 		margin-bottom: 0
+
+	.case-item__img
+		display: none
 	
+	.inner-case-list
+		margin-bottom: 0
+
 
 @media (max-width: 576px)
+	.hidden-xs
+		display: none !important
+
 	.section
 		padding-top: 50px
 		padding-bottom: 50px
@@ -283,8 +311,22 @@
 	.inner-title
 		font-size: 28px
 
-	.service-item
+	.service-item, .case-item
 		text-align: center
+
+	// PAGINATION
+	.pagination
+		margin-left: -7px
+		margin-right: -7px
+
+		&__item
+			margin-left: 7px
+			margin-right: 7px
+
+		&__link
+			width: 45px
+			height: 45px
+
 
 // Container width points
 @media (min-width: 576px)

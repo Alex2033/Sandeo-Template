@@ -238,3 +238,59 @@ h1, h2, h3, h4, h5, h6
 		transform: translate(-50%, -50%)
 		color: #fff
 		font-size: 20px
+
+.pagination
+	margin: 0 -10px
+	text-align: right
+
+	&__item
+		text-align: left
+		margin: 0 10px
+		display: inline-block
+		&.active
+			.pagination__link
+				background-color: $accent
+				&-number
+					color: #fff
+
+	&__link
+		vertical-align: top
+		display: inline-block
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		box-shadow: -1px 4px 6px 1px rgba(141, 141, 141, 0.16)
+		font-family: $alt-font
+		font-size: 22px
+		color: #8d8d8d
+		position: relative
+		transition: background-color .4s ease
+		&:hover
+			background-color: $accent
+			.pagination__link-number
+				color: #fff
+
+		&-number
+			display: inline-block
+			position: relative
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			transition: color .4s ease
+
+	&__btn
+		background-color: $accent
+		cursor: pointer
+		border: 0
+		&:hover
+			background-color: lighten($accent, 10%)
+		&:focus
+			background-color: darken($accent, 20%)
+			outline: 0
+		.svg-inline--fa
+			font-size: 25px
+			color: #fff
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
