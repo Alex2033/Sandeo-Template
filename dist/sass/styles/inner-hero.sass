@@ -1,0 +1,18 @@
+.inner-hero
+	min-height: 250px
+	background-attachment: fixed
+	background-position: 100% 100%
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background-color: rgba($accent, .85)
+
+	&__composition
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)

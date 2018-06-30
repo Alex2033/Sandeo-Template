@@ -1,0 +1,113 @@
+.footer
+	background-attachment: fixed
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background-color: rgba($accent, .9)
+
+	&__wrapper
+		position: relative
+		padding-top: 85px
+		padding-bottom: 85px
+
+	&__logo
+		display: block
+		float: none
+		margin-bottom: -15px
+
+	&__logo-link
+		color: #fff
+		svg
+			path
+				fill: #fff
+
+	&-col
+		width: calc(33.3333% - 30px)
+		margin: 0 15px 30px
+		float: left
+
+	&__title
+		font-size: 21px
+		font-weight: 900
+		color: #fff
+		font-family: $alt-font
+		margin-bottom: 50px
+		text-transform: uppercase
+
+	&__text
+		p
+			line-height: 1.79
+			color: #fff
+			letter-spacing: .6px
+			margin-bottom: 1.5em
+			margin-top: 0
+
+.contact
+	&__item
+		border-radius: 5px
+		border: 2px solid #fff
+		font-size: 17px
+		font-weight: 300
+		color: #fafafa
+		display: block
+		margin-bottom: 14px
+		width: 100%
+		background-color: transparent
+		padding: 5px 17px
+		@include placeholder
+			opacity: 1
+
+	&-area
+		min-height: 100px
+		max-width: 100%
+		margin-bottom: 20px
+
+	&__button
+		background-color: #fff
+		color: $accent
+		padding-left: 45px
+		padding-right: 45px
+		font-size: 15px
+
+.news
+	&:not(:last-child)
+		margin-bottom: 30px
+	&-list
+		position: relative
+		top: -5px
+
+	&__link
+		display: block
+		font-size: 17px
+		font-weight: 400
+		line-height: 1.5
+		color: #fff
+		transition: opacity .25s
+		&:hover,
+		&:focus
+			opacity: .8
+
+	&__text
+		display: block
+		margin-bottom: 10px
+
+	&__time
+		font-style: italic
+		letter-spacing: 1.7px
+		font-weight: 300
+
+.copyright
+	position: relative
+	padding-top: 30px
+	padding-bottom: 30px
+	font-size: 17px
+	font-weight: 500
+	text-transform: uppercase
+	letter-spacing: 1px
+	color: #fff
+	text-align: center
+	border-top: 1px solid #fff

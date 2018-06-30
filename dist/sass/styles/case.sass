@@ -1,0 +1,45 @@
+.case-s
+	background-color: $light
+
+.case-list
+	margin: 0 -15px 60px
+	&__item
+		width: calc(33.3333% - 30px)
+		float: left
+		border-radius: 2px
+		margin: 0 15px 30px
+		transition: box-shadow .4s
+
+		&:hover,
+		&:focus
+			box-shadow: -1px 5.9px 9px 0 rgba(35, 31, 32, 0.35)
+
+		&:nth-child(odd)
+			background-color: $accent
+			border-bottom: 3px solid $accent
+
+		&:nth-child(even)
+			background-color: $dark
+			border-bottom: 3px solid $dark
+
+	&__img
+		img
+			margin-left: auto
+			margin-right: auto
+
+	&__body
+		padding: 25px
+		text-align: center
+		background-color: #fff
+
+	&__title
+		color: #1a1818
+		font-size: 20px
+		font-weight: 700
+		letter-spacing: .8px
+
+	&__text
+		color: $dark
+		line-height: 2.38
+		font-weight: 400
+		letter-spacing: .6px

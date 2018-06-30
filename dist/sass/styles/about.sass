@@ -1,0 +1,56 @@
+.abouts
+	margin: 0 -15px 50px
+	&-item
+		border-radius: 5px
+		float: left
+		width: calc(33.3333% - 30px)
+		margin: 0 15px
+		color: #fff
+		padding: 55px 42px
+		transition: box-shadow .25s
+		margin-bottom: 40px
+
+		&:hover,
+		&:focus
+			box-shadow: 0px 0px 10px rgba(69, 69, 71, 0.6)
+
+		&:nth-child(odd)
+			background-color: $accent
+
+		&:nth-child(even)
+			background-color: $dark
+
+		&__text
+			margin-bottom: 30px
+
+.about-info
+	&__left, &__right
+		float: left
+
+	&__left
+		width: 40%
+		margin-right: 30px
+
+	&__right
+		width: calc(60% - 30px)
+
+	&__title
+		font-size: 30px
+		font-weight: 500
+		color: #3d3d3e
+
+	&__text
+		margin-bottom: 60px
+		p
+			font-size: 15px
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+
+.about-btns
+	&__btn
+		text-transform: uppercase
+
+	&__left
+		margin-right: 35px
+

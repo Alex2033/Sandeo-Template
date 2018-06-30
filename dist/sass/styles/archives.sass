@@ -1,0 +1,36 @@
+.archive-s
+	padding-top: 90px
+	padding-bottom: 90px
+	background-attachment: fixed
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: rgba($accent, .9)
+
+.archive-list
+	margin: 0 -15px -30px
+	&__item
+		float: left
+		width: calc(25% - 30px)
+		text-align: center
+		margin: 0 15px 30px
+		color: #fff
+
+	&__icon
+		font-size: 60px
+
+	&__number
+		font-size: 30px
+		letter-spacing: 2px
+		font-weight: 700
+		line-height: 1.2
+		margin-bottom: 5px
+
+	&__text
+		line-height: 1.2
+		font-size: 20px
+		font-weight: 400

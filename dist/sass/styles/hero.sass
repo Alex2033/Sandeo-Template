@@ -1,0 +1,80 @@
+.hero
+	background-color: $light
+	&-slide
+		position: relative
+
+	&-composition
+		padding-top: 5%
+		padding-bottom: 5%
+
+		&__img
+			padding-top: 30px
+
+	&-composition__left,
+	&-composition__right
+		float: left
+		
+	&-composition__left
+		width: 50%
+
+	&-composition__right
+		float: right
+		margin-left: 30px
+		width: calc(50% - 30px)
+
+	&-btns
+		margin-bottom: 15px
+
+	&-dots
+		text-align: center
+		position: relative
+		bottom: 10px
+		li
+			display: inline-block
+			margin-right: 10px
+			position: relative
+			&.slick-active
+				.hero-dot__btn
+					&::before
+						background-color: $dark
+
+	&-dot__btn
+		display: inline-block
+		position: relative
+		bottom: 5px
+		border: none
+		width: 10px
+		height: 10px
+		background-color: transparent
+		outline: 0
+		cursor: pointer
+		&:hover,
+		&:focus
+			&::before
+				background-color: $dark
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			border: 1px solid $dark
+
+.title
+	&__line
+		display: block
+
+.hero-list
+	margin-bottom: 40px
+	position: relative
+
+.hero-list__item
+	&:not(:last-child)
+		margin-bottom: 5px
+	.svg-inline--fa
+		margin-right: 30px
+		color: $accent
+		font-size: 16px

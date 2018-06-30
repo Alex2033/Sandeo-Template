@@ -1,0 +1,77 @@
+.testimonials
+	background-attachment: fixed
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background-color: rgba($accent, .9)
+
+.testis
+	max-width: 1006px
+	position: relative
+	margin-left: auto
+	margin-right: auto
+
+	.slick-list
+		margin: 0 -15px 80px
+
+	.carousel-dots
+		li.slick-active
+			.carousel-dots__btn
+				background-color: $dark
+
+		&__btn
+			&:hover,
+			&:focus
+				background-color: $dark
+
+.testi
+	border-right: 3px solid $dark
+	margin: 0 15px
+	&__left, &__right
+		float: left
+
+	&__left
+		width: 40%
+		background-color: $dark
+		position: relative
+	
+
+	&__right
+		width: 60%
+		background-color: #fff
+		padding: 40px 15px 15px
+
+	&__img
+		width: 130px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+	&__text
+		margin: 0 0 30px
+		p
+			margin: 0 0 1em
+			font-weight: 400
+			color: #5f5f5f
+
+	&__author
+		text-align: center
+		font-weight: 400
+		display: block
+
+	&__name
+		text-transform: uppercase
+		font-size: 22px
+		color: $dark
+		font-style: normal
+		display: block
+
+	&__job-position
+		display: block
+		color: $accent
+		letter-spacing: .6px
