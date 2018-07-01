@@ -338,3 +338,104 @@ h1, h2, h3, h4, h5, h6
 
 		&:active, &:focus
 			background-color: darken($accent, 20%)
+
+.site-form
+	&__item
+		padding: 17px 26px
+		border: 1px solid #ccc
+		max-width: 362px
+		width: calc(50% - 4px)
+		margin-bottom: 22px
+		font-weight: 400
+
+		&:focus
+			outline: 1px solid $accent
+
+		@include placeholder
+			color: $accent
+			opacity: 1
+
+		&.name
+			float: left
+
+		&.email
+			float: right
+
+	&__area
+		width: 100%
+		max-width: 100%
+		min-height: 197px
+
+	&__title
+		margin-bottom: 30px
+
+.inner-content
+	padding-top: 130px
+	padding-bottom: 130px
+
+.user-form
+	max-width: 450px
+	background-color: $accent
+	padding: 50px 20px 25px
+	margin-left: auto
+	margin-right: auto
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+	border-radius: 4px
+
+
+	&__title
+		text-transform: uppercase
+		color: #fff
+		font-size: 25px
+		font: 400px
+		margin-bottom: 20px
+		letter-spacing: 1px
+		text-align: center
+
+	&__label
+		display: inline-block
+		text-transform: uppercase
+		color: #fff
+		font-size: 15px
+		font-weight: 500
+		letter-spacing: 1px
+		margin-bottom: 10px
+
+	&__item
+		display: inline-block
+		width: 100%
+		border: 1px solid #fff
+		padding: 10px 20px
+		background-color: transparent
+		color: #000
+		font-weight: 400
+		margin-bottom: 25px
+		&:focus
+			outline: 1px solid #fff
+		@include placeholder
+			opacity: .85
+
+		&:last-of-type
+			margin-bottom: 40px
+
+	&__button
+		display: block
+		width: 100%
+		text-align: center
+		background-color: #fff
+		border-color: #fff
+		border-radius: 4px
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+		color: $dark
+		cursor: pointer
+		font-weight: 700
+		text-transform: uppercase
+		padding-top: 10px
+		padding-bottom: 10px
+		border: 0
+		transition: background-color .15s ease
+		&:hover
+			background-color: darken(#fff, 5%)
+
+		&:active
+			transform: translateY(2px)

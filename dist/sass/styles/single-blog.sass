@@ -1,6 +1,124 @@
-.blog-inner__img
-	background-size: cover
-	background-position: 50% 50%
-	background-repeat: no-repeat
-	height: 0
-	padding-bottom: 66.6% 
+.blog-inner
+	background-color: #fff
+	border-bottom: 4px solid $accent
+	margin-bottom: 85px
+	&__link
+		display: block
+	
+	&__img
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		height: 0
+		padding-bottom: 66.6%
+		margin-bottom: 35px
+
+	&__text
+		margin-bottom: 55px
+		p
+			color: #9e9e9e
+			margin-bottom: 30px
+
+			&:last-child
+				color: $dark
+				margin-bottom: 0
+
+	&__body
+		padding: 0 30px 40px
+
+	&__title
+		font-size: 26px
+		transition: color .25s ease
+		&:hover
+			color: $accent
+
+.share
+	text-align: center
+	font-size: 22px
+	font-weight: 700
+	letter-spacing: 0.88px
+	color: $dark
+
+	&-list
+		display: inline-block
+		vertical-align: top
+		&__item
+			display: inline-block
+			position: relative
+			margin-left: 16px
+			width: 37px
+			height: 37px
+
+		&__link
+			border-radius: 10px
+			width: 100%
+			height: 100%
+			border: 1px solid #cccccc
+			display: inline-block
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			transition: background-color .25s ease
+			.svg-inline--fa
+				font-size: 17px 
+				color: $dark
+				transition: color .25s ease
+
+			&:hover
+				background-color: $accent
+				border-color: $accent
+				.svg-inline--fa
+					color: #fff
+
+.comments
+	&-wrapper
+		margin-bottom: 90px
+
+	&__heading
+		color: $accent
+
+	&__item
+		border-bottom: 3px solid $accent
+		padding-bottom: 17px
+		&:not(:last-child)
+			margin-bottom: 35px	
+
+		&.reply
+			margin-left: 15%
+
+	&__img
+		margin-right: 20px
+		width: 119px
+		height: 137px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		border: 2px solid $accent
+		float: left
+
+	&__header
+		font-weight: 500
+
+	&__name
+		color: $dark
+		font-size: 15px
+		margin-right: 10px
+
+	&__time
+		font-size: 13px
+		color: #9e9e9e
+		margin-right: 10px
+
+.reply-button
+	cursor: pointer
+	font-size: 15px
+	border: 0
+	background-color: transparent
+	color: $accent
+	transition: color .25s ease
+	&:hover
+		color: $dark
+
+
+			

@@ -1,0 +1,43 @@
+.blog-itm
+	background-color: #fff
+	border-bottom: 4px solid $accent
+	margin-bottom: 30px
+	&:last-of-type
+		margin-bottom: 90px
+
+	&__img
+		height: 0
+		padding-bottom: 45%
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		position: relative
+		margin-bottom: 25px
+
+	&__date
+		position: absolute
+		bottom: -22px
+		right: 22px
+		background-color: $accent
+		max-width: 143px
+		font-size: 36px
+		font-weight: 700
+		text-align: center
+		color: #fff
+
+	&__text
+		margin-bottom: 25px
+
+	&__body
+		padding-bottom: 25px
+
+.blog-link
+	text-align: right
+	&__item
+		display: inline-block
+		font-size: 18px
+		font-weight: 700
+		color: $accent
+		transition: color .25s ease
+		&:hover
+			color: $dark
