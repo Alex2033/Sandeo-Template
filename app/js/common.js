@@ -1,3 +1,8 @@
+$(window).ready(function() { 
+	$(".loader").fadeOut(); 
+	$(".preloader").delay(400).fadeOut("slow"); 
+});
+
 $(function() {
 	$(".nav-list").superfish();
 });
@@ -95,23 +100,8 @@ $(function() {
 
 });
 
-/*$(document).ready(function() {
-	setTimeout(function() {
-	  var mainDivs = $(".testi"); //Получаем все элементы с классом YOUR-BLOCK
-	  var maxHeight = 0;
-	  for (var i = 0; i < mainDivs.length; ++i) {
-		if (maxHeight < $(mainDivs[i]).height()) { //Находим максимальную высоту
-			maxHeight = $(mainDivs[i]).height();
-		}
-	  }
-	  for (var i = 0; i < mainDivs.length; ++i) {
-		$(mainDivs[i]).height(maxHeight); //Устанавливаем всем элементам максимальную высоту
-		$(".testi__left").css("height", $(".testi__right").height());
-	  }
-	}, 1000); 
-});*/
 
-$(function($){
+/* $(function($){
 	var max_col_height = 0; // максимальная высота, первоначально 0
 	$('.testi').each(function(){ // цикл "для каждой из колонок"
 		if ($(".testi").height() > max_col_height) { // если высота колонки больше значения максимальной высоты,
@@ -119,7 +109,7 @@ $(function($){
 		}
 	});
 	$('.testi__left').height(max_col_height); // устанавливаем высоту каждой колонки равной значению максимальной высоты
-});
+}); */
 
 $(document).ready(function() {
   setTimeout(function() {

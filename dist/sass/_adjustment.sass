@@ -439,3 +439,59 @@ h1, h2, h3, h4, h5, h6
 
 		&:active
 			transform: translateY(2px)
+
+.preloader
+	background: none repeat scroll 0 0 $light
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+@keyframes rotate
+	0%
+		transform: rotate(0deg)
+
+	50%
+		transform: rotate(180deg)
+
+	100%
+		transform: rotate(360deg)
+
+
+@keyframes rotate2
+	0%
+		transform: rotate(0deg)
+		border-top-color: $dark
+
+	50%
+		transform: rotate(180deg)
+		border-top-color: $accent
+
+	100%
+		transform: rotate(360deg)
+		border-top-color: $dark
+
+.loader
+	position: relative
+	top: 40%
+	transform: translateY(-50%)
+	margin-left: auto
+	margin-right: auto
+	width: 150px
+	height: 150px
+	display: block
+	overflow: hidden
+	div
+		height: 100%
+
+.loader1, .loader1 div
+	@include loaderDivMixin
+	border-top-color: $dark
+	border-bottom-color: $accent
+
+.loader, .loader *
+	will-change: transform

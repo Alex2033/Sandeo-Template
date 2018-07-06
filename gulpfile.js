@@ -10,7 +10,8 @@ var gulp          = require('gulp'),
 		rename        = require('gulp-rename'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require("gulp-notify"),
-		rsync         = require('gulp-rsync');
+		rsync         = require('gulp-rsync'),
+		htmlmin       = require('gulp-htmlmin');
 
 gulp.task('browser-sync', function() {
 	browsersync({
@@ -47,6 +48,12 @@ gulp.task('js', function() {
 	.pipe(gulp.dest('app/js'))
 	.pipe(browsersync.reload({ stream: true }))
 });
+
+gulp.task('minify', function() {
+	return gulp.src('app/*.html')
+	  .pipe(htmlmin({collapseWhitespace: true}))
+	  .pipe(gulp.dest('dist'));
+  });
 
 gulp.task('build', function(){
     return gulp.src("app/**")
